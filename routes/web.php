@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\BatimentsController;
+use App\Http\Controllers\FormationsController;
 use Illuminate\Support\Facades\Route;
 
 use function Symfony\Component\String\b;
@@ -17,3 +18,4 @@ use function Symfony\Component\String\b;
 */
 
 Route::resource('batiment', BatimentsController::class);
+Route::resource('formation',FormationsController::class);

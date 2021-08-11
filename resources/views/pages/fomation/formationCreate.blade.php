@@ -1,7 +1,7 @@
 @extends("template.index")
 @section('content')
     <div class="container">
-        <form class="d-flex flex-column" action="/batiment" method="POST">
+        <form class="d-flex flex-column" action="/formation" method="POST">
             @csrf
             <input placeholder="name" type="text" name="name" id="">
             <input placeholder="description" type="text" name="description" id="">

@@ -13,13 +13,13 @@
             </tr>
         </thead>
         <tbody>
-            @foreach ($batiments as $batiment )
+            @foreach ($formations as $formation )
             <tr>
-                <th scope="row">{{ $batiment->id }}</th>
-                <td>{{ $batiment->name  }}</td>
+                <th scope="row">{{ $formation->id }}</th>
+                <td>{{ $formation->name  }}</td>
                 <td class="d-flex">
-                    <a href="/batiment/{{ $batiment->id }}" class="btn btn-success text-white">SHOW</a>
-                    <form action="/batiment/{{ $batiment->id }}" method="POST">
+                    <a href="/formation/{{ $formation->id }}" class="btn btn-success text-white">SHOW</a>
+                    <form action="/formation/{{ $formation->id }}" method="POST">
                         @csrf
                         @method("DELETE")
                         <input type="submit" class="btn btn-danger text-white" value="X">
@@ -29,7 +29,7 @@
             @endforeach
         </tbody>
     </table>
-    <a href="/batiment/create" class="btn btn-primary text-white">Create un batiment</a>
+    <a href="/formation/create" class="btn btn-primary text-white">Create une formation</a>
 </div>
 
 @endsection

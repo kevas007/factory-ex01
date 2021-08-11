@@ -1,7 +1,7 @@
 @extends('partials.index')
 @section('content')
     <div class="container">
-        <form class="d-flex flex-column" action="/batiment/{{ $edit->id }}" method="POST">
+        <form class="d-flex flex-column" action="/formation/{{ $edit->id }}" method="POST">
             @csrf
             @method("PUT")
             <input value="{{ $edit->name }}" placeholder="name" type="text" name="name" id="">
